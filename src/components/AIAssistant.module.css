@@ -1,0 +1,112 @@
+.container {
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.title {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--text-muted);
+}
+
+.emptyState p {
+  margin-bottom: 1rem;
+}
+
+.loadingState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  color: var(--text-muted);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(59, 130, 246, 0.2);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.resultState {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.levelBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  width: fit-content;
+}
+
+.levelBadge.mild {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.levelBadge.moderate {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+  border: 1px solid var(--warning);
+}
+
+.levelBadge.severe {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.resultBox {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.resultBox h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--text-main);
+}
+
+.resultBox p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.warningText {
+  font-size: 0.85rem;
+  color: var(--warning);
+  margin-top: 0.5rem;
+}
